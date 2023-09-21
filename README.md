@@ -19,13 +19,25 @@ This is the "Continuous Integration using GitHub Actions of Python Data Science 
 
 ### 🧪 Running Tests
 
-To run tests in this project, use the following command:
+#### All Tests:
+To run all tests in this project, including tests for the Jupyter notebook, Python script, and shared library, use the following command:
 
 ```bash
 make test
 ```
 
-This command runs all unit tests, including tests on the Jupyter notebook, script, and lib file, and ensures that any changes made haven't introduced new issues.
+#### Jupyter Notebook Tests:
+To specifically test the Jupyter notebook, use:
+
+```bash
+make test_notebook
+```
+
+#### Script and Library Tests:
+
+```bash
+make test_script_lib
+```
 
 🛠️ File Structure
 * polars.ipynb: A Jupyter Notebook containing cells that perform descriptive statistics using Polars.
