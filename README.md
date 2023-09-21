@@ -6,7 +6,7 @@
 ![Installing](https://github.com/nogibjj/ids706-individual-project-1/actions/workflows/install.yml/badge.svg)
 
 This is the "Continuous Integration using GitHub Actions of Python Data Science Project". The project utilizes GitHub Actions for Continuous Integration and provides a **.devcontainer** setup for seamless development inside a Docker container with Visual Studio Code.
-
+ 
 ## 🚀 Getting Started
 ### Local Development with VS Code and .devcontainer
 1. Ensure you have **Docker** installed and running on your machine.
