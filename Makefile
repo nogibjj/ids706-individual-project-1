@@ -7,7 +7,7 @@ format:
     black src/ tests/
 
 lint:
-    flake8 src/ tests/
+    ruff src/ tests/
 
 test:
     pytest --nbval notebooks/polars.ipynb
