@@ -3,4 +3,4 @@ matplotlib==3.4.3
 pytest==6.2.5
 nbval==0.10.0
 black==21.9b0
-flake8==3.9.2
+ruff=0.0.290
