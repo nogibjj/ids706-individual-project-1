@@ -17,6 +17,3 @@ COPY requirements.txt .
 
 # Install project dependencies
 RUN pip install --no-cache-dir -r requirements.txt
-
-# Open up port for web server
-EXPOSE 8000
