@@ -9,6 +9,8 @@ format:
 lint:
     ruff src/ tests/
 
-test:
+test_notebook:
     pytest --nbval notebooks/polars.ipynb
+
+test_script_lib:
     pytest tests/
