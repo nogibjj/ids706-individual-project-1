@@ -1,16 +1,19 @@
 import unittest
-from src.lib import read_dataset, generate_summary_statistics
-# Assuming your lib.py file is in a src folder. Adjust the import according to your project structure.
+from src.lib import (
+    read_dataset, 
+    generate_summary_statistics
+)
+
 
 class TestLib(unittest.TestCase):
 
     def setUp(self):
         # Setup a test dataframe using a subset of your data
-        self.data = read_dataset('./tests/test.csv')  # Please replace with the actual path to your test data
+        self.data = read_dataset('tests/test_data.csv')  
 
     def test_read_dataset(self):
         # Test that read_dataset is working correctly
-        data = read_dataset('./tests/test.csv')  # Please replace with the actual path to your test data
+        data = read_dataset('tests/test_data.csv')  
         self.assertIsNotNone(data)
 
     def test_generate_summary_statistics(self):
@@ -19,6 +22,7 @@ class TestLib(unittest.TestCase):
         self.assertIn('mean', summary)
         self.assertIn('median', summary)
         self.assertIn('std_dev', summary)
+
 
 if __name__ == '__main__':
     unittest.main()
