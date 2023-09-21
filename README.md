@@ -28,11 +28,11 @@ make test
 This command runs all unit tests, including tests on the Jupyter notebook, script, and lib file, and ensures that any changes made haven't introduced new issues.
 
 🛠️ File Structure
-* notebook.ipynb: A Jupyter Notebook containing cells that perform descriptive statistics using Polars or Pandas.
-* script.py: A Python script performing the same descriptive statistics as the notebook.
+* polars.ipynb: A Jupyter Notebook containing cells that perform descriptive statistics using Polars or Pandas.
+* polars.py: A Python script performing the same descriptive statistics as the notebook.
 * lib.py: A file that shares common code between the script and notebook.
 * Makefile: Contains commands to run tests, format code, lint code, and install necessary Python packages.
-* test_script.py: Holds unit tests for the script.
+* test_polars.py: Holds unit tests for the script.
 * test_lib.py: Holds unit tests for the lib file.
 * requirements.txt: Specifies the Python dependencies required for this project.
 * .devcontainer: Configurations for the VS Code remote container development environment.
