@@ -1,12 +1,22 @@
 {
-    "name": "Python Project",
-    "dockerFile": "Dockerfile",
-    "forwardPorts": [8000],
-    "settings": { 
-        "terminal.integrated.shell.linux": "/bin/bash",
-        "python.pythonPath": "/usr/local/bin/python",
-        "python.linting.pylintEnabled": true,
-        "python.linting.enabled": true
-    },
-    "extensions": ["ms-python.python"]
+	"name": "Ubuntu",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers-contrib/features/bandit:2": {},
+		"ghcr.io/devcontainers-contrib/features/jake:1": {},
+		"ghcr.io/devcontainers-contrib/features/vulture:2": {},
+		"ghcr.io/devcontainers-contrib/features/yapf:2": {},
+		"ghcr.io/oleksis/devcontainer-features/python-launcher:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"ms-vscode.makefile-tools",
+				"GitHub.vscode-github-actions"
+			]
+		}
+	}
 }
