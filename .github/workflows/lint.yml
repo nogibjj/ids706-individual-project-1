@@ -17,4 +17,4 @@ jobs:
       run: pip install flake8
 
     - name: Lint code
-      run: flake8 src/ tests/
+      run: ruff src/ tests/
