@@ -1,6 +1,6 @@
 polars==0.14.0
 matplotlib==3.4.3
 pytest==6.2.5
-pytest-nbval
+pytest-nbval==0.10.0
 black==21.9b0
 flake8==3.9.2
