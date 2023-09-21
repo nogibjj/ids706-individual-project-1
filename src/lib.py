@@ -8,7 +8,7 @@ def read_dataset(file_path: str) -> pl.DataFrame:
         data = pl.read_excel(file_path, infer_schema_length=10000)
     else:
         raise ValueError("Unsupported file type")
-    
+
     return data
 
 
