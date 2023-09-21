@@ -1,6 +1,5 @@
-import os
 import polars as pl
-import matplotlib.pyplot as plt
+
 
 def read_dataset(file_path: str) -> pl.DataFrame:
     if file_path.endswith('.csv'):
@@ -11,6 +10,7 @@ def read_dataset(file_path: str) -> pl.DataFrame:
         raise ValueError("Unsupported file type")
     
     return data
+
 
 def generate_summary_statistics(data: pl.DataFrame) -> dict:
     if data is None or data.shape[0] == 0:
